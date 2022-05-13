@@ -6,6 +6,7 @@ const {
   validateAnimal,
 } = require("../lib/animals.js");
 const { animals } = require("../data/animals");
+// Prevents from data being added to the database
 jest.mock('fs');
 
 test("creates an animal object", () => {
